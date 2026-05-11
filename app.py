@@ -399,7 +399,7 @@ def main() -> None:
         "összehasonlítása és elemzése."
     )
 
-    data_dir = Path(__file__).resolve().parents[1] / "data"
+    data_dir = Path(__file__).resolve().parent / "data"
     csv_files = sorted(data_dir.glob("*.csv"))
 
     if not csv_files:
